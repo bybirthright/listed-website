@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    text-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.background-video-container {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
