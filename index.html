@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Discord Metadata-->
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://listedbot.com/">
     <meta property="og:title" content="Listed Bot">
     <meta property="og:description" content="Listed Bot - The ultimate solution for marketplace servers. Create listings, manage tickets, and more.">
-    <meta property="og:image" content="https://listedbot.com/assets/images/logo.png">
+    <meta content="#f50097" data-react-helmet="true" name="theme-color">
+
+    <!-- Twitter Metadata-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://listedbot.com/">
+    <meta property="twitter:title" content="Listed Bot">
+    <meta property="twitter:description" content="Listed Bot - The ultimate solution for marketplace servers. Create listings, manage tickets, and more.">
 
     <title>Listed Bot</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -21,9 +26,104 @@
 </head>
 
 <body>
-    <div class="background-video-container">
-        <video class="background-video" loop muted autoplay>
+    <div class="header" id="header">
+        <a href="/subpages/updates/index.html">Updates</a>
+        <a href="/subpages/docs/index.html">Docs</a>
+        <div class="scroll-to-top" id="scrollToTop">
+            <img src="assets/images/listed_logo_full.png" alt="Listed Logo">
+            <img src="assets/images/listed_logo_full_coloured.png" alt="Listed Logo (Hover)">
+        </div>
+        <a href="/subpages/premium/index.html">Premium</a>
+        <a href="/subpages/support/index.html">Support</a>
+
+        <script src="assets/scripts/header.js"></script>
+    </div>
+
+    <div class="title">
+        <video class="background-video" loop muted autoplay disablePictureInPicture>
             <source src="assets/videos/background.mp4" type="video/mp4">
         </video>
+
+        <div id="overlay-text">
+            <h1>Listed Bot</h1>
+            <p>The ultimate, streamlined solution for all marketplace servers.
+            Create listings, manage tickets, moderate your server.</p>
+
+            <a href="https://discord.gg/listed"><button id='get-started'>Get Started</button></a> <a href="https://dashboard.listedbot.com/"><button id="dashboard">Dashboard</button></a>
+
+            <p><i class="fa-solid fa-arrow-down" id="arrow"></i></p>
+        </div>
     </div>
+
+    <div class="content">
+        <div class="feature-text">
+            <h1>Features</h1>
+            <div class="feature-grid">
+                <div class="div1">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <h2>Listing Management</h2>
+                    <hr>
+                    <p>Easily create, update, and manage marketplace listings with simple commands.</p>
+                </div>
+                <div class="div2">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h2>Ticket System</h2>
+                    <hr>
+                    <p>Efficiently handle customer inquiries and disputes with an automated ticket system.</p>
+                </div>
+                <div class="div3">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>User Moderation</h2>
+                    <hr>
+                    <p>Keep your marketplace safe with advanced moderation features and auto-moderation.</p>
+                </div>
+                <div class="div4">
+                    <i class="fa-solid fa-star"></i>
+                    <h2>Fully Customizable</h2>
+                    <hr>
+                    <p>Tailor the look and feel of the bot to your aesthetic. Exclusive to premium.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="faq">
+        <h1>FAQ</h1>
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <div class="faq-question">How do I add Listed to my server?</div>
+                <div class="faq-answer">
+                    Adding MarketMod to your server is easy! Simply click on the "Get Started" button at the top of this page, and follow the prompts to authorize the bot for your server. You'll need to have the "Manage Server" permission to add bots to your Discord server.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is Listed free to use?</div>
+                <div class="faq-answer">
+                    Listed will always be free to use. However, we do offer premium features such as customization, auction and more. Check out the premium page for more details.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How does creating listings work?</div>
+                <div class="faq-answer">
+                    Creating listings for your products or services is as simple as running one command and following the easy-to-use prompts that the bot will generate for you. You can also update listings or delete them as needed. All permissions for channels will be handled by the bot to keep your server safe.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can Listed help prevent scams?</div>
+                <div class="faq-answer">
+                    Listed has a reputation system for all users. Trusted sellers can build a reputation that can be easily checked by any user and will help users in preventing scams. Listed bot is not liable for any scams that may occur through sales advertised by Listed. Please always use your initiative and stay safe.
+                </div>
+            </div>
+
+            <script src="assets/scripts/faq.js"></script>
+        </div>
+        <p>If you have any more questions, please contact our support team: <a href="https://discord.gg/listed">discord.gg/listed</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2024 Listed Bot. All rights reserved.</p>
+        <p>Links: <a href="https://discord.gg/listed"><i class="fa-brands fa-discord"></i> Discord</a> | <a href="https://dashboard.listedbot.com/"><i class="fa-solid fa-cog"></i> Dashboard</a> | <i class="fa-solid fa-envelope"></i> Email: support@listedbot.com</p>
+        <p>Powered by NebulaNodes: <a href="https://nebulanodes.co.uk"><i class="fa-solid fa-server"></i> nebulanodes.co.uk</a></p>
+    </div>
+    
 </body>
